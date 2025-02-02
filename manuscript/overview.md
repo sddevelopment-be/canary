@@ -27,7 +27,28 @@ The Canary Platform is conceived as a modular, scalable early warning system des
 ### Unique Value Proposition
 
 
-
 ## Architecture Overview
 
+### System Context
+
 ![System Context View](./resources/system_context.svg)
+
+### Key Design Ideas
+
+* Maximize modularity to allow for easy integration with existing systems.
+  * Use an event-based interaction model to allow for decoupled components and easy extensibility.
+  * Create core libraries that can be used to build custom rules and actions.
+  * Use a ports-and-adapters architecture to allow for easy integration with different systems.
+* Leverage automated code-generation tools to reduce the time and effort required to create new integrations.
+  * Use a domain-specific language to define rules and actions.
+  * Use a template-based approach to generate code for different languages and platforms.
+  * Define APIs for common integration points, using the OPEN API specification.
+  * Use a GraphQL-based query language to allow for flexible data retrieval.
+* Use client-defined rules to allow for easy customization and extensibility.
+  * Provide a rule engine that can execute custom rules defined by the client.
+  * Use a plugin architecture to allow for easy extension of the rule engine.
+* Reuse existing solutions in the organization to reduce the time and effort required to implement the system, and allow teams to onboard Canary transparently.
+  * Use existing monitoring solutions to collect data.
+  * Use existing alerting systems and communication tools to notify users of issues.
+  * Use existing logging and tracing solutions to track the flow of data through the system.
+* Use a container-based deployment model to allow for easy scaling and management of the system.
