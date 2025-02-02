@@ -26,6 +26,17 @@ The Canary Platform is conceived as a modular, scalable early warning system des
 
 ### Unique Value Proposition
 
+* Focus on ease-of-integration with existing systems.
+  * Modular architecture allows for easy integration with existing systems.
+  * Use of a domain-specific language to define rules and actions.
+  * Use of a template-based approach to generate code for different languages and platforms.
+* Shift monitoring tasks "left" in the operational process.
+  * Detect potential issues early, when they are simpler and more cost-effective to fix.
+  * Safeguard operational integrity, reduce economic risk, and ensure compliance with regulatory standards.
+* Keep the business-value systems in control of their own domain and rules.
+  * Provide a rule engine that can execute custom rules defined by the client.
+  * Use a plugin architecture to allow for easy extension of the rule engine.
+  * Supply domain agnostic communication libraries to allow for easy integration with existing systems.
 
 ## Architecture Overview
 
