@@ -1,24 +1,39 @@
 # Glossary
 
+This section contains a list of often difficult or specialized words, their common abbreviations, and their definitions as used throughout the rest
+of this document. You can use this as a quick reference, or to share definitions with others. Where applicable, the source material the terminology was retrieved from is included as references.
+
+## A
+
 ### Asynchronous Communication
 
 Asynchronous communication refers to interactions where participants engage in communication without requiring all parties to be present simultaneously. This form of communication allows for flexibility in timing and location, enabling individuals to send and receive messages at different times. Examples of asynchronous communication include emails, text messages, and discussion boards.
+
+## B
 
 ### Blocking Wait 
 
 Blocking wait refers to a situation where a process is paused or delayed until a specific condition is met or an event occurs. During this time, the process remains inactive and cannot proceed until the blocking condition is resolved. Blocking waits can impact system performance and responsiveness, especially in scenarios where multiple processes are waiting for the same resource or event, or where the resolution of the delegated processing takes a significant amount of time.
 
+## F
+
 ### Fail Early
 
 The "fail early" principle emphasizes the importance of detecting failures at the earliest possible point in the delivery chain. This approach means that when a defect or issue arises—whether in the design, coding, or testing phase—the process is structured to immediately flag the problem and halt further progression until it is addressed. By doing so, resources are not wasted on subsequent processes built on faulty assumptions, and remediation is more cost-effective and efficient.
+
+## K
 
 ### Key Performance Indicator
 
 Key Performance Indicators (KPIs) are quantifiable metrics used to evaluate the success of an organization, project, or individual in achieving specific objectives. KPIs are typically aligned with strategic goals and provide a clear, measurable indication of performance. They help organizations track progress, identify areas for improvement, and make informed decisions based on data-driven insights.
 
+## N
+
 ### Non-Repudiation
 
 Non-repudiation is a principle that ensures a party cannot deny the authenticity of their signature or the sending and receiving of a message, often achieved through digital signatures and cryptography. It provides proof of the origin and integrity of data, making it crucial in legal and digital communications.
+
+## S
 
 ### Shift Left
 
@@ -27,6 +42,8 @@ The practice of moving testing, analysis, and defect detection earlier in the li
 ### Synchronous Communication
 
 Synchronous communication refers to real-time interactions where participants engage in immediate, simultaneous exchanges of information. This form of communication requires all parties to be present and actively involved in the conversation, enabling instant feedback and response. Examples of synchronous communication include face-to-face meetings, phone calls, video conferences, and live chat sessions.
+
+## V
 
 ### Value Stream
 
