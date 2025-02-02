@@ -1,0 +1,46 @@
+@startuml
+title Canary: System Context Diagram
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+Boundary(canary, "Canary", "Ecosystem scope boundary") {
+    System(validation, "Quality Assessment", "Assesses quality of process execution, based on configurable performance indication rules")
+    System(notification, "Notification Distribution", "Sends 'warning signs' to relevant parties, based on distribution rule matching")
+    System(inspection, "Inspection", "Allows for inspection of both concurrent and historical process executions")
+
+    Rel_D(validation, notification, "informs")
+    Rel_U(notification, inspection, "sends updates to")
+}
+
+System_Ext(communication, "Communication Provider", "Sending, receiving, and storing of messages to people and systems")
+System_Ext(bi_dashboards, "BI Dashboards", "Visual representation of process execution data, in an easily digestible format")
+System_Ext(vs_system, "Value Delivering System", "Responsible for delivering value to the organisation, by execution operational processes in accordance to business logic.")
+
+Person(vs_manager, "Value Stream Manager", "", $tags="Element+Person")
+Person(operator, "Operator", "", $tags="Element+Person")
+Person(compliance_officer, "Compliance Officer", "", $tags="Element+Person")
+Person(bi_developer, "BI Developer", "", $tags="Element+Person")
+Person(vs_developer, "Value System Developer", "", $tags="Element+Person")
+
+Rel(vs_system, validation, "delegates validation to")
+Rel(vs_system, notification, "informs of key events")
+Rel(notification, communication, "sends notifications through")
+
+Rel_D(bi_dashboards, inspection, "fetches data from")
+
+Rel(vs_manager, vs_system, "owns")
+Rel(operator, vs_system, "operates")
+Rel_U(vs_developer, vs_system, "builds and maintains")
+Rel_R(compliance_officer, vs_system, "assesses, and enforces compliance of")
+Rel_R(bi_developer, bi_dashboards, "builds and maintains")
+
+Rel(vs_manager, bi_dashboards, "monitors process execution through")
+
+Rel_R(vs_developer, validation, "configures rules in")
+Rel_U(bi_developer, notification, "configures distribution rules in")
+Rel(compliance_officer, inspection, "analyses information of")
+
+
+SHOW_LEGEND()
+@enduml
