@@ -8,3 +8,22 @@ Within systems engineering, quality attributes are realized non-functional requi
 |-------------------|-------------| 
 
 
+## Interoperability
+
+> The ability of a system to work with other systems without special effort on the part of the user.
+
+
+
+## Extensibility
+
+> The ability of a system to be extended and enhanced without requiring major changes to the system's architecture.
+
+## Scalability
+
+> The ability of a system to handle a growing amount of work or its potential to accommodate growth.
+
+## Reliability
+
+> The ability of a system to perform its required functions under stated conditions for a specified period of time.
+
+
