@@ -1,6 +1,10 @@
 # Canary: Early Warning System for Process Quality
 
-Canary is an ecosystem to enable early warning functionality in existing architectures. It is designed to me modular, scalable, and easy to integrate with existing software and organizational processes. This way, it can be leveraged to provide `Shift Left` capabilities within an organization, allowing for early detection of potential issues when they are still easy to fix. Like a canary in a coal mine, it's intent is to send out a warning signal when something is going wrong, so adequate measures can be taken to prevent (economic) disaster.
+Organizations across industries are increasingly challenged by the late detection of operational issues, leading to exponentially higher costs when problems eventually surface in production. This challenge is compounded by the inherent complexity of modern software ecosystems—where legacy systems coexist with newer technologies -- and the pressure to deliver software faster and more economically. 
+
+In many cases, organizations struggle to implement consistent, scalable monitoring solutions due to the diverse and evolving nature of their technological landscapes. Additionally, stringent legislative and regulatory requirements, especially in sectors like finance and healthcare, demand robust compliance and risk mitigation measures. 
+
+The Canary Platform is conceived as a modular, scalable early warning system designed to seamlessly integrate with existing architectures. By shifting critical monitoring tasks _“left”_ in the operational process, Canary aims to detect potential issues early -- when they are simpler and more cost-effective to fix -- thus safeguarding operational integrity, reducing economic risk, and ensuring compliance with regulatory standards.
 
 ## Business Context
 
@@ -20,9 +24,7 @@ Canary is an ecosystem to enable early warning functionality in existing archite
 
 > TODO: Add Causal loop diagram to illustrate the problem statement
 
-
-
-### Value Proposition
+### Unique Value Proposition
 
 
 
