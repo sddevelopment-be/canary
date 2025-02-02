@@ -1,48 +1,57 @@
 # Canary: Early Warning System for Process Quality
 
-Organizations across industries are increasingly challenged by the late detection of operational issues, leading to exponentially higher costs when problems eventually surface in production. This challenge is compounded by the inherent complexity of modern software ecosystems—where legacy systems coexist with newer technologies -- and the pressure to deliver software faster and more economically. 
+Organizations across industries face the growing challenge of detecting operational issues too late—often after they have already led to costly disruptions. This challenge is exacerbated by the inherent complexity of modern software ecosystems, where legacy systems coexist with newer technologies, and by the increasing pressure to deliver software faster and more economically.
 
-In many cases, organizations struggle to implement consistent, scalable monitoring solutions due to the diverse and evolving nature of their technological landscapes. Additionally, stringent legislative and regulatory requirements, especially in sectors like finance and healthcare, demand robust compliance and risk mitigation measures. 
+Many organizations struggle to implement consistent, scalable monitoring solutions due to diverse and evolving technological landscapes. At the same time, stringent legislative and regulatory requirements—especially in sectors like finance and healthcare—demand robust compliance and risk mitigation measures.
 
-The Canary Platform is conceived as a modular, scalable early warning system designed to seamlessly integrate with existing architectures. By shifting critical monitoring tasks _“left”_ in the operational process, Canary aims to detect potential issues early -- when they are simpler and more cost-effective to fix -- thus safeguarding operational integrity, reducing economic risk, and ensuring compliance with regulatory standards.
+The Canary Platform is conceived as a modular, scalable early warning system designed to integrate seamlessly with existing architectures. By shifting critical monitoring tasks _“left”_ in the operational process, Canary detects potential issues early—when they are simpler and more cost-effective to fix—thus safeguarding operational integrity, reducing economic risk, and ensuring compliance with regulatory standards.
 
 ## Business Context
 
 ### Problem Statement
 
-* Many organisations struggle with operational issues caused by late detection of problems in their processes.
-  * The cost of fixing issues increases exponentially the later they are detected.
-* Many organisations struggle with the complexity of their software systems.
-  * Inherent complexity of the problem domain makes it challenging for teams to understand the system as a whole.
-  * A mix between older and newer technologies makes it hard to implement a consistent monitoring solution.
-* Economic pressure to deliver software faster and cheaper has a trickle-down effect on the quality of the software.
-  * This leads to a higher number of defects in production, which in turn leads to higher operational costs.
-  * Development teams are unlikely to take the time to implement monitoring solutions due to feature pressure.
-* Legislative requirements are becoming more stringent, requiring organisations to have a better understanding of their systems.
-  * This is especially true in the financial and healthcare sectors, where the cost of non-compliance is high.
-  * Compliance is often achieved through manual processes, which are error-prone, slow, and difficult to scale. 
+- **Late Detection of Issues:**  
+  Many organizations struggle with operational issues that arise from detecting problems too late.
+  - The cost of remediation increases exponentially as issues progress.
 
-> TODO: Add Causal loop diagram to illustrate the problem statement
+- **System Complexity:**  
+  The inherent complexity of modern software systems makes it difficult for teams to gain a holistic understanding of their environments.
+  - A blend of legacy and modern technologies complicates the implementation of consistent monitoring solutions.
+
+- **Economic Pressures:**  
+  The pressure to deliver software faster and at lower costs often results in quality compromises.
+  - This leads to more defects in production and, subsequently, higher operational costs.
+  - Development teams may forego robust monitoring solutions due to feature delivery pressures.
+
+- **Regulatory and Compliance Demands:**  
+  Increasingly stringent legislative requirements—particularly in finance and healthcare—require organizations to maintain deep insight into their systems.
+  - Compliance is often achieved via manual, error-prone processes that are slow and hard to scale.
+
+> **Note:** A causal loop diagram is planned to visually illustrate these interdependencies and feedback loops.
 
 ### Unique Value Proposition
 
-* Focus on ease-of-integration with existing systems.
-  * Modular architecture allows for easy integration with existing systems.
-  * Use of a domain-specific language to define rules and actions.
-  * Use of a template-based approach to generate code for different languages and platforms.
-* Shift monitoring tasks "left" in the operational process.
-  * Detect potential issues early, when they are simpler and more cost-effective to fix.
-  * Safeguard operational integrity, reduce economic risk, and ensure compliance with regulatory standards.
-* Keep the business-value systems in control of their own domain and rules.
-  * Provide a rule engine that can execute custom rules defined by the client.
-  * Use a plugin architecture to allow for easy extension of the rule engine.
-  * Supply domain agnostic communication libraries to allow for easy integration with existing systems.
+- **Seamless Integration:**  
+  Canary’s modular architecture is designed for ease-of-integration with existing systems, ensuring that:
+  - A domain-specific language defines rules and actions.
+  - A template-based approach generates code for multiple languages and platforms.
+
+- **Early Issue Detection:**  
+  By shifting monitoring tasks _“left”_ in the operational process, Canary:
+  - Detects issues early, when they are easier and less costly to resolve.
+  - Safeguards operational integrity, reduces economic risk, and ensures regulatory compliance.
+
+- **Empowering Business Domains:**  
+  Canary keeps the control of core business processes with the organization by:
+  - Providing a flexible rule engine that executes client-defined rules.
+  - Using a plug-in architecture to extend the rule engine without disrupting the core system.
+  - Offering domain-agnostic communication libraries that integrate easily with existing systems.
 
 ## Architecture Overview
 
 ### System Context
 
-The diagram below shows the high-level system context for the canary platform. It illustrates the key components and their interactions with external systems, as well as the primary stakeholders involved in the system.
+The diagram below presents a high-level view of the Canary Platform’s context. It outlines the key components, their interactions with external systems, and the primary stakeholders engaged in the ecosystem.
 
 ![System Context View](./resources/system_context.svg)
 
@@ -50,40 +59,37 @@ The diagram below shows the high-level system context for the canary platform. I
 
 #### Notable External Systems
 
-This section describes the key external systems that interact with the Canary Platform, as well as the nature of their interactions. These systems are essential for the operation of the Canary Platform and provide critical data and functionality. The interactions with these systems are described in more detail in sections pertaining to Key Interactions, and Process Flow descriptions.
+These external systems are critical to the operation of the Canary Platform, providing essential data and functionalities. Detailed interactions with these systems are described in the Key Interactions and Process Flow sections.
 
-##### Communication Provider
+- **Communication Provider:**  
+  Manages the sending, receiving, and storage of messages to both people and systems.
 
-Sending, receiving, and storing of messages to people and systems
+- **BI Dashboards:**  
+  Presents a visual representation of process execution data in an accessible format.
 
-##### BI Dashboards
-
-Visual representation of process execution data, in an easily digestible format
-
-##### Value Delivering System
-
-Responsible for delivering value to the organisation, by execution operational processes in accordance to business logic.
+- **Value Delivering System:**  
+  Executes operational processes in accordance with business logic, directly delivering value to the organization.
 
 #### Canary Platform Components
 
-The key components of the Canary Platform are described below, along with their primary responsibilities and interactions with other components. These are further detailed and decomposed in their respective Domain Descriptions.
+The internal components of the Canary Platform are responsible for assessing process quality, distributing notifications, and enabling in-depth inspection of process executions. Their detailed descriptions can be found in the respective Domain Descriptions.
 
 ### Key Design Ideas
 
-* Maximize modularity to allow for easy integration with existing systems.
-  * Use an event-based interaction model to allow for decoupled components and easy extensibility.
-  * Create core libraries that can be used to build custom rules and actions.
-  * Use a ports-and-adapters architecture to allow for easy integration with different systems.
-* Leverage automated code-generation tools to reduce the time and effort required to create new integrations.
-  * Use a domain-specific language to define rules and actions.
-  * Use a template-based approach to generate code for different languages and platforms.
-  * Define APIs for common integration points, using the OPEN API specification.
-  * Use a GraphQL-based query language to allow for flexible data retrieval.
-* Use client-defined rules to allow for easy customization and extensibility.
-  * Provide a rule engine that can execute custom rules defined by the client.
-  * Use a plugin architecture to allow for easy extension of the rule engine.
-* Reuse existing solutions in the organization to reduce the time and effort required to implement the system, and allow teams to onboard Canary transparently.
-  * Use existing monitoring solutions to collect data.
-  * Use existing alerting systems and communication tools to notify users of issues.
-  * Use existing logging and tracing solutions to track the flow of data through the system.
-* Use a container-based deployment model to allow for easy scaling and management of the system.
+- **Modularity and Integration:**
+  - Emphasize a modular, event-based interaction model to allow decoupled components and simple extensibility.
+  - Utilize core libraries, ports-and-adapters architecture, and standard API definitions (e.g., using the OPEN API specification) to integrate easily with existing systems.
+
+- **Automated Code Generation:**
+  - Leverage a domain-specific language and template-based approaches to generate code for different languages and platforms.
+  - Define GraphQL-based query interfaces for flexible data retrieval.
+
+- **Customization Through Client-Defined Rules:**
+  - Provide a robust rule engine that executes custom rules defined by the client.
+  - Use a plug-in architecture to enable seamless extension of the rule engine.
+
+- **Reuse of Existing Solutions:**
+  - Integrate with current monitoring, alerting, logging, and tracing solutions to minimize onboarding effort and enhance transparency.
+
+- **Container-Based Deployment:**
+  - Employ containerization to simplify system scaling, management, and consistent deployment across environments.
