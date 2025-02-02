@@ -27,7 +27,7 @@ The Value Stream Manager is responsible for aligning operational processes with 
 * **Comprehensive KPI Insights:** Access historical and real-time data on self-defined key performance indicators for informed decision-making.
 * **Bottleneck Detection Tools:** Utilize analytics that quickly identify process inefficiencies and recurring issues.
 * **Deep-Dive Capabilities:** Benefit from drill-down features that allow granular analysis of process quality and pinpointing of root causes.
-
+* **Training and Support:** Ensure that technical staff, operational agents, and internal end-users receive adequate training, and have an easy way to get support in integrating with the Canary system.
 
 ## Value Stream System Developer
 
@@ -141,3 +141,4 @@ The Quality Assurance Engineer is responsible for ensuring that every facet of t
 * **Actionable Dashboards:** User-friendly dashboards that offer customizable views of test coverage, performance metrics, and quality trends, supporting both manual and automated testing insights.
 * **Minimal False Positives:** A system that minimizes false alerts, ensuring that the QA team can focus on genuine issues without unnecessary interruptions.
 * **Continuous Feedback Loop:** Capabilities that support a continuous integration and delivery pipeline, providing timely feedback to foster rapid iterations and improvements.
+
