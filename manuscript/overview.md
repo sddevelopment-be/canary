@@ -42,7 +42,31 @@ The Canary Platform is conceived as a modular, scalable early warning system des
 
 ### System Context
 
+The diagram below shows the high-level system context for the canary platform. It illustrates the key components and their interactions with external systems, as well as the primary stakeholders involved in the system.
+
 ![System Context View](./resources/system_context.svg)
+
+### Key Components
+
+#### Notable External Systems
+
+This section describes the key external systems that interact with the Canary Platform, as well as the nature of their interactions. These systems are essential for the operation of the Canary Platform and provide critical data and functionality. The interactions with these systems are described in more detail in sections pertaining to Key Interactions, and Process Flow descriptions.
+
+##### Communication Provider
+
+Sending, receiving, and storing of messages to people and systems
+
+##### BI Dashboards
+
+Visual representation of process execution data, in an easily digestible format
+
+##### Value Delivering System
+
+Responsible for delivering value to the organisation, by execution operational processes in accordance to business logic.
+
+#### Canary Platform Components
+
+The key components of the Canary Platform are described below, along with their primary responsibilities and interactions with other components. These are further detailed and decomposed in their respective Domain Descriptions.
 
 ### Key Design Ideas
 
