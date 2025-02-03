@@ -1,0 +1,191 @@
+[[terminology]]
+name = "Asynchronous Communication"
+abbreviation = ""
+domain = "communication"
+description = """
+Asynchronous communication refers to interactions where participants engage in communication without requiring all parties to be present simultaneously. This form of communication allows for flexibility in timing and location, enabling individuals to send and receive messages at different times. Examples of asynchronous communication include emails, text messages, and discussion boards.
+"""
+aliases = []
+references = [
+    { title = "Microsoft Architecure Pages: Asynchronous Message Based Communication", link = "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/asynchronous-message-based-communication" }
+]
+
+[[terminology]]
+name = "Conway's Law"
+domain = "Software architecture"
+description = """
+Melvin Conway wrote: __'Any organization that designs a system (defined broadly) will produce a design whose structure
+is a copy of the organization's communication structure'__. The law originates from the observation that software is built by teams of people who are organized in a specific way. In order to build software effectively,
+these groups must work together to achieve their shared goal. Therefore, the software produced by these teams will invariably
+resemble the structure of the teams themselves.
+As an example, a company with two separate teams working for different departments (invoicing and sales) will likely produce software that
+is divided into two separate modules, one for invoicing and one for sales. These modules will probably interact with each other along pre-defined interfaces.
+Much like the teams interact with each other along pre-defined communication channels. If the teams are working in isolation, the software will likely be built in a similar way,
+with the two modules being designed in a way that allows them to be deployed and changed as independently as possible.
+    """
+aliases = []
+references = [
+    { title = "Conway's Law on wikipedia", link = "https://en.wikipedia.org/wiki/Conway%27s_law" },
+    { title = "Fowler on Conway's Law", link = "https://martinfowler.com/bliki/ConwaysLaw.html" }
+]
+
+[[terminology]]
+name = "Domain Driven Design"
+abbreviation = "DDD"
+domain = "software architecture"
+description = """
+Domain-Driven Design is a set of principles and schemes aimed at creating optimal systems of objects. Reduced to the
+creation of software abstractions, which are called models of subject areas. These models include business logic that
+establishes a link between the real conditions of the products' application area and the code.
+<br />
+<br />
+Domain-Driven Design is about creating shared understanding of the problem space. This shared understanding is reinforced ubiquitously via conversations,
+code and diagrams. DDD’s Shared understanding enhances synergy and alignment, increasing the ability to deliver value sustainably — ideally over the lifetime of a product.
+"""
+aliases = []
+references = []
+
+[[terminology]]
+name = "Systems Thinking"
+abbreviation = ""
+domain = "Learning"
+description = """
+Systems Thinking is an approach to understanding and solving complex problems by viewing them as parts of an interconnected whole rather than in isolation. It involves recognizing patterns, relationships, and feedback loops within systems to better anticipate the impact of decisions and actions, thereby enabling more holistic and effective solutions.
+"""
+aliases = ["Holistic Thinking", "Systems Approach"]
+references = [
+    { title = "The Fifth Discipline: The Art & Practice of The Learning Organization by Peter Senge", link = "https://www.amazon.com/Fifth-Discipline-Practice-Learning-Organization/dp/0385517254" },
+    { title = "Thinking in Systems: A Primer by Donella H. Meadows", link = "https://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557" },
+    { title = "Systems Thinking For Social Change: A Practical Guide to Solving Complex Problems, Avoiding Unintended Consequences, and Achieving Lasting Results by David Peter Stroh", link = "https://www.amazon.com/Systems-Thinking-Social-Change-Consequences/dp/160358580X" }
+]
+
+[[terminology]]
+name = "Feedback Loops"
+abbreviation = ""
+domain = "Systems Thinking"
+description = """
+Feedback loops are the mechanisms through which changes in one part of a system are amplified or dampened by the system itself.
+It is important to understand the different types of feedback loops, as they can have a significant impact on the behavior of a system.
+"""
+aliases = ["Loops", "Cycles"]
+
+[[terminology]]
+name = "Adaptability"
+abbreviation = ""
+domain = ""
+description = """
+Ability to rapidly change what we're working on, The organization's ability to quickly change direction.
+"""
+aliases = ["Business Agility", "Flexibility"]
+references = [
+]
+
+[[terminology]]
+name = "Lead Time"
+abbreviation = ""
+domain = ""
+description = """
+The time it takes to deliver a piece of work from start (concept) to finish (delivered value in hands of end-users.
+The amount of time between the initiation of some process and its completion,
+e.g. the time required to manufacture or procure a product; the time required before something can be provided or delivered.
+"""
+aliases = []
+references = [
+    { title = "Lead Time on wikipedia", link = "https://en.wikipedia.org/wiki/Lead_time" },
+    { title = "Lead Time on Investopedia", link = "https://www.investopedia.com/terms/l/leadtime.asp" },
+    { title = "Lead Time vs. Cycle Time", link = "https://waydev.co/lead-time-vs-cycle-time/" },
+    { title = "Reducing Lead Time in warehousing & Manufacturing", link = "https://www.conger.com/reduce-lead-time//" }
+]
+
+[[terminology]]
+name = "Blocking Wait"
+abbreviation = ""
+domain = ""
+description = """
+Blocking wait refers to a situation where a process is paused or delayed until a specific condition is met or an event occurs. During this time, the process remains inactive and cannot proceed until the blocking condition is resolved. Blocking waits can impact system performance and responsiveness, especially in scenarios where multiple processes are waiting for the same resource or event, or where the resolution of the delegated processing takes a significant amount of time.
+"""
+aliases = []
+references = [
+]
+
+[[terminology]]
+name = "Fail Early"
+abbreviation = ""
+domain = "software development"
+description = """
+The "fail early" principle emphasizes the importance of detecting failures at the earliest possible point in the delivery chain. This approach means that when a defect or issue arises—whether in the design, coding, or testing phase—the process is structured to immediately flag the problem and halt further progression until it is addressed. By doing so, resources are not wasted on subsequent processes built on faulty assumptions, and remediation is more cost-effective and efficient.
+"""
+aliases = []
+references = [
+    { title = "SDD Patterns: Fail Fast", link = "https://patterns.sddevelopment.be/practices/fail_fast/" }
+]
+
+[[terminology]]
+name = "Non-Repudiation"
+abbreviation = ""
+domain = "Security"
+description = """
+Non-repudiation is a principle that ensures a party cannot deny the authenticity of their signature or the sending and receiving of a message, often achieved through digital signatures and cryptography. It provides proof of the origin and integrity of data, making it crucial in legal and digital communications.
+"""
+aliases = []
+references = [
+]
+
+[[terminology]]
+name = "Key Performance Indicator"
+abbreviation = "KPI"
+domain = "Management"
+description = """
+The critical (key) indicators of progress toward an intended result. KPIs provide a focus for strategic and operational
+improvement, create an analytical basis for decision-making and help focus attention on what matters most.
+Key Performance Indicators (KPIs) are quantifiable metrics used to evaluate the success of an organization, project, or individual in achieving specific objectives. KPIs are typically aligned with strategic goals and provide a clear, measurable indication of performance. They help organizations track progress, identify areas for improvement, and make informed decisions based on data-driven insights.
+"""
+aliases = []
+references = []
+
+
+[[terminology]]
+name = "Shift Left"
+abbreviation = ""
+domain = "Quality Assurance"
+description = """
+The practice of moving testing, analysis, and defect detection earlier in the lifecycle of automated processes. Rather than waiting for later stages -- such as integration, deployment, or delivery -- to uncover issues, teams integrate quality checks and automated testing right from the design and development phases. This proactive approach minimizes the cost and complexity of fixing defects, reduces the risk of operational issues, and ultimately contributes to a more stable, high-quality product. It embodies a culture where continuous feedback and early warning mechanisms, such as those provided by Canary, enable swift remediation and improve overall process efficiency.
+"""
+aliases = []
+references = [
+]
+
+[[terminology]]
+name = "Synchronous Communication"
+abbreviation = ""
+domain = ""
+description = """
+Synchronous communication refers to real-time interactions where participants engage in immediate, simultaneous exchanges of information. This form of communication requires all parties to be present and actively involved in the conversation, enabling instant feedback and response. Examples of synchronous communication include face-to-face meetings, phone calls, video conferences, and live chat sessions.
+"""
+aliases = []
+references = [
+]
+
+[[terminology]]
+name = "Causal Loop Diagram"
+abbreviation = ""
+domain = "Systems Thinking"
+description = """
+A causal loop diagram is a visual representation of the feedback loops within a system, illustrating how various elements interact and influence each other over time. It consists of nodes (variables) and arrows (causal links) that show the relationships between these variables, highlighting the reinforcing and balancing feedback loops that drive system behavior. Causal loop diagrams are used in systems thinking and dynamic modeling to understand complex systems, identify leverage points, and predict system behavior under different conditions.
+"""
+aliases = []
+references = [
+    { title="Guidelines for Drawing Causal Loop Diagram", link="https://www.cs.toronto.edu/~sme/SystemsThinking/GuidelinesforDrawingCausalLoopDiagrams.pdf" },
+    {title="Thinking in Systems: A Primer", link="https://www.goodreads.com/book/show/3828902-thinking-in-systems"}
+]
+
+[[terminology]]
+name = "Value Stream"
+abbreviation = ""
+domain = "Software Architecure"
+description = """
+A Value Stream is a sequence of interrelated activities and processes that collectively enable an organization to deliver its core products or services. Drawing on concepts from frameworks such as ArchiMate and SAFe, it represents the flow of value from the initial request or input through to the final delivery, ensuring that every step contributes to the organization’s strategic objectives. This holistic view helps identify inefficiencies, optimize workflows, and continuously enhance the overall effectiveness of business operations.
+"""
+aliases = []
+references = [
+]

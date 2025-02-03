@@ -1,0 +1,147 @@
+title: Canary Early Warning System
+subtile: "Assess and monitor your operational processes before issues escalate"
+baseURL: "localhost:1313"
+
+module:
+  imports:
+    path: github.com/StefMa/hugo-fresh
+
+assetDir: "assets"
+enableRobotsTXT: true
+
+paginate: 5
+canonifyURLs: true
+
+# Disables warnings
+markup:
+  defaultMarkdownHandler: goldmark
+  highlight:
+    codeFences: true
+    noClasses: true
+    lineNos: false
+    style: catppuccin-frappe
+    guessSyntax: true
+    tabWidth: 2
+  goldmark:
+    extensions:
+      footnote: true
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+taxonomies:
+  category: "categories"
+  tag: "tags"
+  level: "levels"
+
+params:
+  dataDir: /data
+  openGraph: true
+  description: >
+    Canary: Early Warning System.
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: logos/ppp_spinoff.png
+    link: "/"
+    # Default width/height. Uncomment if you need to change
+    width: 112
+    height: 28
+  font:
+    name: "D-DIN"
+    sizes: [400,600]
+
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Home
+    url: /
+  - title: Platform Description
+    link: /overview/
+    sublinks:
+      - title: Overview
+        url: /overview/
+      - title: Stakeholders
+        url: /stakeholders/
+      - title: Quality Attributes
+        url: /quality_attributes/
+  - title: Core Domains
+    url: /domains/domain_overview/
+    sublinks:
+      - title: Overview
+        url: /domains/domain_overview/
+      - title: Quality Assesment
+        url: /domains/inspection/
+      - title: Inspection
+        url: /domains/inspection/
+      - title: Notification
+        url: /domains/notification/
+  - title: Decision Records
+    url: /adr/
+
+  - title: Terminology
+    url: /glossary/
+  mainContent: /domain_overview.md
+  info:
+    title: Canary Early Warning System
+    subtitle: Assess and monitor your operational processes before issues escalate
+    text: >
+      Organizations across industries face the growing challenge of detecting operational issues too late—often after they have already led to costly disruptions. This challenge is exacerbated by the inherent complexity of modern software ecosystems, where legacy systems coexist with newer technologies, and by the increasing pressure to deliver software faster and more economically.
+      <br />
+      <br />
+      Many organizations struggle to implement consistent, scalable monitoring solutions due to diverse and evolving technological landscapes. At the same time, stringent legislative and regulatory requirements—especially in sectors like finance and healthcare—demand robust compliance and risk mitigation measures.
+      <br />
+      <br />
+      The Canary Platform is conceived as a modular, scalable early warning system designed to integrate seamlessly with existing architectures. By shifting critical monitoring tasks _“left”_ in the operational process, Canary detects potential issues early—when they are simpler and more cost-effective to fix—thus safeguarding operational integrity, reducing economic risk, and ensuring compliance with regulatory standards."
+
+  footer:
+    logo: LOGO_BASE_SMALL.webp
+    socialmediatitle: Socials
+    socialmedia:
+    - link: https://www.linkedin.com/company/sddevelopment-be
+      icon: linkedin
+    - link: https://github.com/sddevelopment-be/canary
+      icon: github
+    bulmalogo: false
+
+mediaTypes:
+  text/enriched:
+    suffixes:
+      - enr
+  text/html:
+    suffixes:
+      - asp
+      - html
+      - htm
+  application/xml:
+    suffixes:
+     - xml
+  application/rss+xml:
+    suffixes:
+      - rss
+  application/json:
+    suffixes:
+      - json
+  application/yaml:
+    suffixes:
+      - yaml
+      - yml
+
+## Integrations and services
+services:
+  rss:
+    limit: 42
+
+author:
+  email: stijn@sddevelopment.be
+  name: Stijn Dejongh
+copyright: © 2025 SD Development, BV.
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+languages:
+  en:
+    contentDir: content
+    disabled: false
+    languageCode: en-US
+    languageDirection: ""
+    languageName: "English"
+    title: ""
+    weight: 0
