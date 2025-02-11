@@ -10,22 +10,25 @@ The Canary Platform is conceived as a modular, scalable early warning system des
 
 ### Problem Statement
 
-- **Late Detection of Issues:**  
-  Many organizations struggle with operational issues that arise from detecting problems too late.
-  - The cost of remediation increases exponentially as issues progress.
+#### Late Detection of Issues
 
-- **System Complexity:**  
-  The inherent complexity of modern software systems makes it difficult for teams to gain a holistic understanding of their environments.
-  - A blend of legacy and modern technologies complicates the implementation of consistent monitoring solutions.
+* Many organizations struggle with operational issues that arise from detecting problems too late.
+* The cost of remediation increases exponentially as issues progress.
 
-- **Economic Pressures:**  
-  The pressure to deliver software faster and at lower costs often results in quality compromises.
-  - This leads to more defects in production and, subsequently, higher operational costs.
-  - Development teams may forego robust monitoring solutions due to feature delivery pressures.
+#### System Complexity  
 
-- **Regulatory and Compliance Demands:**  
-  Increasingly stringent legislative requirements—particularly in finance and healthcare—require organizations to maintain deep insight into their systems.
-  - Compliance is often achieved via manual, error-prone processes that are slow and hard to scale.
+* The inherent complexity of modern software systems makes it difficult for teams to gain a holistic understanding of their environments.
+* A blend of legacy and modern technologies complicates the implementation of consistent monitoring solutions.
+
+#### Economic Pressures  
+* The pressure to deliver software faster and at lower costs often results in quality compromises.
+* This leads to more defects in production and, subsequently, higher operational costs.
+* Development teams may forego robust monitoring solutions due to feature delivery pressures.
+
+#### Regulatory and Compliance Demands  
+
+* Increasingly stringent legislative requirements—particularly in finance and healthcare—require organizations to maintain deep insight into their systems.
+* Compliance is often achieved via manual, error-prone processes that are slow and hard to scale.
 
 > **Note:** A causal loop diagram is planned to visually illustrate these interdependencies and feedback loops.
 
